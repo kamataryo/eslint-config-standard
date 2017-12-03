@@ -1,13 +1,9 @@
 module.exports = {
   env: {
-    browser: true,
     commonjs: true,
     es6: true,
     mocha: true,
     node: true
-  },
-  globals: {
-    __NODE_ENV__: false
   },
   plugins: ['babel', 'import', 'chai-expect', 'mocha'],
   extends: [
@@ -120,8 +116,8 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        paths: ['src', 'test'],
-        extensions: ['.js', '.jsx', '.scss']
+        paths: ['src'],
+        extensions: ['.js']
       }
     }
   }

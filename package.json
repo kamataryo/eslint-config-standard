@@ -4,12 +4,11 @@
   "description": "My eslint standard config",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preversion": "npm run lint && npm test",
+    "postversion": "git push origin master && git push origin $(git describe --abbrev=0 --tags) && npm publish $(git describe --abbrev=0 --tags)"
   },
-  "keywords": [
-    "eslint",
-    "config"
-  ],
+  "keywords": ["eslint", "config"],
   "author": "kamataryo <mugil.cephalus+npmjs.com@gmail.com>",
   "license": "MIT",
   "repository": {
