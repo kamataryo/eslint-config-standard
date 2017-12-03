@@ -4,11 +4,14 @@
   "description": "My eslint standard config",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "preversion": "npm run lint && npm test",
+    "test": "eslint index.js -c index.js",
+    "preversion": "npm test",
     "postversion": "git push origin master && git push origin $(git describe --abbrev=0 --tags) && npm publish $(git describe --abbrev=0 --tags)"
   },
-  "keywords": ["eslint", "config"],
+  "keywords": [
+    "eslint",
+    "config"
+  ],
   "author": "kamataryo <mugil.cephalus+npmjs.com@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -20,6 +23,7 @@
   },
   "homepage": "https://github.com/kamataryo/eslint-config-standard#readme",
   "dependencies": {
+    "babel-eslint": "^8.0.3",
     "eslint-import-resolver-node": "^0.3.1",
     "eslint-plugin-babel": "^4.1.2",
     "eslint-plugin-chai-expect": "^1.1.1",
@@ -31,6 +35,8 @@
     "access": "public"
   },
   "devDependencies": {
-    "eslint": "^4.9.0"
+    "eslint": "^4.9.0",
+    "prettier": "^1.8.2",
+    "prettier-eslint": "^8.2.2"
   }
 }

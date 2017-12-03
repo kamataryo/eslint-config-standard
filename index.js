@@ -3,21 +3,21 @@ module.exports = {
     commonjs: true,
     es6: true,
     mocha: true,
-    node: true
+    node: true,
   },
   plugins: ['babel', 'import', 'chai-expect', 'mocha'],
   extends: [
     'eslint:recommended',
     'plugin:import/errors',
-    'plugin:eslint-comments/recommended'
+    'plugin:eslint-comments/recommended',
   ],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2017,
     sourceType: 'module',
     ecmaFeatures: {
-      experimentalObjectRestSpread: true
-    }
+      experimentalObjectRestSpread: true,
+    },
   },
   rules: {
     'quote-props': ['error', 'as-needed'],
@@ -32,8 +32,8 @@ module.exports = {
         objects: 'always-multiline',
         imports: 'always-multiline',
         exports: 'always-multiline',
-        functions: 'always-multiline'
-      }
+        functions: 'always-multiline',
+      },
     ],
     eqeqeq: ['error', 'always'],
     indent: ['error', 2, { SwitchCase: 1 }],
@@ -51,8 +51,8 @@ module.exports = {
         skipStrings: true,
         skipComments: true,
         skipRegExps: true,
-        skipTemplates: true
-      }
+        skipTemplates: true,
+      },
     ],
     'no-unused-vars': ['error'],
     'no-undefined': ['error'],
@@ -66,9 +66,9 @@ module.exports = {
           ArrowFunctionExpression: true,
           ClassDeclaration: true,
           FunctionDeclaration: true,
-          MethodDefinition: true
-        }
-      }
+          MethodDefinition: true,
+        },
+      },
     ],
     quotes: ['error', 'single'],
     semi: ['error', 'never'],
@@ -78,18 +78,18 @@ module.exports = {
       {
         line: {
           markers: ['/'],
-          exceptions: ['-', '+']
+          exceptions: ['-', '+'],
         },
         block: {
           markers: ['!'],
           exceptions: ['*'],
-          balanced: true
-        }
-      }
+          balanced: true,
+        },
+      },
     ],
     'space-before-blocks': [
       'error',
-      { functions: 'always', keywords: 'always', classes: 'always' }
+      { functions: 'always', keywords: 'always', classes: 'always' },
     ],
     'space-unary-ops': ['error'],
     'space-infix-ops': ['error', { int32Hint: false }],
@@ -111,14 +111,14 @@ module.exports = {
     'mocha/no-hooks-for-single-case': ['warn'],
     'mocha/no-top-level-hooks': ['error'],
     'mocha/no-identical-title': ['error'],
-    'mocha/no-nested-tests': ['error']
+    'mocha/no-nested-tests': ['error'],
   },
   settings: {
     'import/resolver': {
       node: {
         paths: ['src'],
-        extensions: ['.js']
-      }
-    }
-  }
+        extensions: ['.js'],
+      },
+    },
+  },
 }
