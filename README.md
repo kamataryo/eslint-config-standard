@@ -1,5 +1,7 @@
 # @kamataryo/eslint-config-standard
 
+[![Build Status](https://travis-ci.org/kamataryo/eslint-config-standard.svg?branch=master)](https://travis-ci.org/kamataryo/eslint-config-standard)
+
 [![npm (scoped)](https://img.shields.io/npm/v/@kamataryo/eslint-config-standard.svg)](https://www.npmjs.com/package/@kamataryo/eslint-config-standard)
 [![downloads](https://img.shields.io/npm/dt/@kamataryo/eslint-config-standard.svg?style=flat)](https://david-dm.org/@kamataryo/eslint-config-standard#info=devDependencies)
 
@@ -20,7 +22,7 @@ My ESLint configuration for Node.js project.
 ## install
 
 ```shell
-$ npm install @kamataryo/eslint-config-standard --save-dev
+$ npm install eslint @kamataryo/eslint-config-standard --save-dev
 ```
 
 ## usage
@@ -35,7 +37,7 @@ module.exports = {
 ## deployment (for commiters)
 
 ```shell
-$ npm version patch -m "some patch"
-$ npm version minor -m "some minor update"
-$ npm version major -m "some major update"
+$ npm version patch -m "your patch update"
+$ npm version minor -m "your minor update"
+$ npm version major -m "your major update"
 ```
