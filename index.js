@@ -9,7 +9,7 @@ module.exports = {
   globals: {
     __NODE_ENV__: false
   },
-  plugins: ['babel', 'import', 'chai-expected', 'mocha'],
+  plugins: ['babel', 'import', 'chai-expect', 'mocha'],
   extends: [
     'eslint:recommended',
     'plugin:import/errors',
